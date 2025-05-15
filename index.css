@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.herosection{
+    background: url(./images/heroSectionBackground.png);
+    min-height: 60vh;
+    background-size: cover;
+    background-position:center;
+    color: white;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    padding: 16px 48px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.headercontainer{
+    display: flex;
+    gap:18px;
+}
+
+.headercontainer .usericon{
+    height:25px;
+    width:25px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: solid 1px white;
+    display: none;
+}
+
+
+
+.herologo_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+    height: calc(60vh- 75px);
+}
+
+.herologo{
+    height: auto;
+    width: 200px;
+}
+
+.herostatement{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 350;
+}
+
+.herosection_input{
+    background-color: white;
+    padding : 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.heroinput_location,
+.heroinput_search{
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.heroinput_location{
+          width: 35%;
+          border-right: 2px  solid #e0e0e0;
+}
+
+.heroinput_search{
+         width: 65%;
+}
+
+.container{
+    margin: 3rem auto;
+    width: 90%;
+}
+.weoffer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardweoffer{
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition: all 1s ease;
+    margin-right: 12px;
+}
+
+.cardweoffer:hover{
+    transform: scale(1.1);
+}
+
+.cardweoffer img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content{
+    padding: 10px;
+    
+}
+
+.content h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.content p{
+    font-size: 12.5px;
+}
+
+.collection h1{
+        font-weight: 600;
+}
+
+.collection .subheading{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.subheading span:nth-child(2){
+    color: #ff7e8b;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.collectioncardcontainer{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:0.5rem;
+    margin-top: 1.25rem;
+}
+
+.collectioncardcontainer .card{
+    height: 300px;
+    min-width: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card1{
+    background-image: url(./images/collection1.jpg);
+}
+
+.card2{
+    background-image: url(./images/collection2.jpg);
+}
+
+.card3{
+    background-image: url(./images/collection3.jpg);
+}
+
+.card4{
+    background-image: url(./images/collection4.jpg);
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 10px;
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.9) 0%,
+        rgba(0,0,0,0.05) 50%,
+        rgba(0,0,0,0.05) 80%,
+    );
+    z-index: 1;
+}
+.collectioncardcontainer .card .cardcontent{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+}
+
+.content h4{
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.gettheapp{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: rgb(255,251,247);
+    width:100%;
+    padding: 3rem 6rem;
+}
+
+.gettheapp .semicontainer{
+    display: flex;
+    width:60%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.gettheapp .semicontainer .left{
+    flex:2;
+}
+
+.gettheapp .semicontainer .left img{
+     width: 100%;
+     object-fit: cover;
+     object-position: center;
+}
+
+.gettheapp .semicontainer .right{
+     flex:3;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+}
+
+.right h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.right p{
+    font-size: 0.8rem;
+}
+
+.right .radiobuttoncontainer{
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.right .radiobuttoncontainer div{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+}
+
+.right .radiobuttoncontainer div input{
+    height: 15px;
+    width: 15px;
+    accent-color: rgb(239,79,95);
+}
+
+.right .inputcontainer{
+    display:flex;
+    gap: 0.5rem;
+}
+
+.inputcontainer{
+    flex-wrap: wrap;
+}
+
+.inputcontainer button,
+.inputcontainer input{
+    padding: 10px 12px;
+}
+
+.inputcontainer input{
+    flex: auto;
+    border: 1.5px solid grey;
+    outline:none;
+    border-radius:5px;
+}
+
+.inputcontainer button{
+    border: none;
+    background-color: rgb(239,79,95);
+    color: white;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.right .downloadappcon{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.right .downloadappcon h5{
+    font-weight: 400;
+    color: grey;
+}
+
+.right .downloadappcon div{
+    display:flex;
+    gap: 1rem;
+}
+
+right .downloadappcon div img{
+    width: 35%;
+}
+
+.footer{
+    width: 100%
+}
+
+.footersec1{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.footersec1 img{
+    width:130px;
+}
+
+.sec1button{
+    display: flex;
+    gap: 1rem; 
+}
+
+.sec1button button{
+    padding: 5px;
+    width: 95px;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navigationcontainer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+.linkcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.linkcontainer h5{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom:5px;
+    letter-spacing: 0.8px;
+}
+
+.footerlink{
+    text-decoration: none;
+    color: grey;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footerlink:hover{
+    color: black;
+}
+
+.sectionlinkscontainer button{
+   background-color: black;
+   border:none;
+   width: 25px;
+   height: 25px;
+   border-radius: 35px;
+   color: white;
+   cursor: pointer;
+}
+
+.sectionlinkscontainer button i{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.footerlogo{
+    width: 100%;
+}
+
+.disclaimer{
+    width:95%;
+    color:grey;
+    margin: auto;
+    border-top: 1px solid grey;
+    padding-top: 1.5rem; 
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+    .headercontainer .usericon{
+        display: flex;
+    }
+    .link{
+        display:none;
+    }
+    .herosection{
+        min-height:80vh;
+    }
+    .herologo_container{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+    .heroinput_location,
+    .heroinput_search{
+             padding: 18px;
+             border-radius: 10px;
+             width: 98%;
+    }
+    .herologo_container{
+        height: calc(80vh- 40px);
+    }
+    .herostatement{
+        font-size: 18px;
+        width: 95%;
+    }
+    
+}
+
+@media only screen and (max-width: 1300px){
+    .gettheapp .semicontainer .left,
+    .gettheapp .semicontainer .right{
+        flex:1;
+    }
+    .gettheapp .semicontainer{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .gettheapp {
+        padding: 2rem 0;
+    }
+    .gettheapp .semicontainer{
+            width: 95%;
+            flex-direction: column;
+    }
+    .navigationcontainer{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    .navigationcontainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .navigationcontainer{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
